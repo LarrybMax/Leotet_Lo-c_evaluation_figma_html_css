@@ -2,75 +2,83 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Document</title>
-  <link rel="stylesheet" href="css/style Accueil.css">
+  <link rel="stylesheet" href="css/style Accueil.css" />
 </head>
 <body>
 
   <!-- 1ère colonne : header -->
   <header>
-    <img src="assets/images/logo.png" alt="Logo Probeats" class="logo">
-
-    <div class="btn-group">
-      <button class="btn">Achat</button>
-      <button class="btn">Contact / Assistance</button>
-      <button class="btn">Inscription / Connexion</button>
-    </div>
+    <img src="assets/images/probeats-logo.png" alt="Logo Probeats" class="logo" />
+    <nav class="btn-group">
+      <a href="recapitulatif.html" class="btn">Achat</a>
+      <a href="assistance.html"   class="btn">Contact / Assistance</a>
+      <a href="inscription.html"  class="btn">Inscription / Connexion</a>
+    </nav>
   </header>
 
   <section class="separator"></section>
 
-  <!-- 2ème colonne : main -->
+  <!-- 2ᵉ → 4ᵉ colonnes : main -->
   <main>
-    <img src="assets/images/img-1.png" alt="Image principale" class="main-img">
-    <p class="main-text"> Lorem Ipsum Dolor <br>
-    Cras sodales lacus ad commodo rhondus
-    </p>
-  
 
-  <section class="separator"></section>
-
-  <!-- 3ème colonne : deux parties -->
-  <div class="col3">
-    <div class="part part-1">
-      <img src="assets/images/enceinte_portable.png" alt="enceinte_portable">
-      <p>Praesent volputate lorem in <br> ultrices ornare 
-    </p>
+    <!-- 2ᵉ colonne : image + texte -->
+    <div class="col2">
+      <img src="assets/images/img-1.png" alt="Produit Probeats" />
+      <div class="col2-text">
+        <p>Lorem Ipsum Dolor <br>
+          Cras sodales lacus ad commodo rhondus</p>
+      </div>
     </div>
-    <div class="part part-2">
-      <img src="assets/images/enceinte_salon.png" alt="enceinte_salon">
-      <p>Etiam at sem pharetra augue fringilla <br> rhoncus.</p>
+
+    <section class="separator"></section>
+
+    <!-- 3ᵉ colonne : deux parties égales -->
+    <div class="col3">
+      <div class="part part-a">
+        <img src="assets/images/enceinte_portable.png" alt="enceinte_portable" />
+        <p>Praesent volputate lorem in <br> ultrices ornare</p>
+      </div>
+      <div class="part part-b">
+        <img src="assets/images/enceinte_salon.png" alt="enceinte_salon" />
+        <p>Etiam at sem pharetra augue fringilla <br> rhoncus.</p>
+      </div>
     </div>
-  </div>
+
+    <section class="separator"></section>
+
+    <!-- 4ᵉ colonne : trois parties égales -->
+    <div class="col4">
+      <div class="part">
+        <p>Contenu section 1</p>
+      </div>
+      <div class="part">
+        <p>Contenu section 2</p>
+      </div>
+      <div class="part">
+        <p>Contenu section 3</p>
+      </div>
+    </div>
+
+  </main>
 
   <section class="separator"></section>
 
-  <!-- 4ème colonne : trois parties -->
-  <div class="col4">
-    <div class="part"><p>Praesent volputate lorem in <br> ultrices ornare</p></div>
-    <div class="part"><p>Phasellus eu purus non nisi <br> tristique interdum id et eros.</p></div>
-    <div class="part">Aliquam pellentesque lectus et ligula <br> dignissim commodo.</div>
-  </div>
-</main>
-
-  <section class="separator"></section>
-
-  <!-- 5ème colonne : footer -->
+  <!-- 5ᵉ colonne : footer -->
   <footer>
-    <p>© Copyright 2025</p>
+    <p>© 2025 Probeats</p>
     <nav class="footer-nav">
-      <p>Plan du site</p>
-        <p>Mentions Légales</p>
+      <a href="#">Plan du site</a>
+      <a href="#">Mentions légales</a>
     </nav>
     <div class="social">
-      <a href=https://twitter.com target="_blank"><img src="assets/images/twitter.png" alt="Twitter"></a>
-      <a href=https://instagram.com target="_blank"><img src="assets/images/instagram.png" alt="Instagram"></a>
-      <a href=https://facebook.com target="_blank"><img src="assets/images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="icon-twitter-white.svg"   alt="Twitter"   /></a>
+      <a href="#"><img src="icon-instagram-white.svg" alt="Instagram" /></a>
+      <a href="#"><img src="icon-facebook-white.svg"  alt="Facebook"  /></a>
     </div>
-    </nav>
   </footer>
 
 </body>
