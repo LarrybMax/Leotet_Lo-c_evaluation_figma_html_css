@@ -1,0 +1,116 @@
+
+/* Import police Barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  color: #292a2d;
+  width: 100%;
+}
+
+/* Séparateur */
+.separator {
+  width: 100%;
+  height: 20px;
+}
+
+/* 1ère colonne : header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-main {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-main .btn {
+  display: inline-block;
+  padding: 24px;
+  background-color: #292a2d;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* 2ᵉ colonne : historique */
+main.history {
+  background-color: #009099;
+  padding: 24px;
+  text-align: center;
+}
+
+main.history h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #292a2d;
+  margin-bottom: 16px;
+}
+
+main.history p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/* 3ᵉ colonne : points forts */
+main.strengths {
+  background-color: #7edce1;
+  padding: 24px;
+  text-align: center;
+}
+
+main.strengths h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #292a2d;
+  margin-bottom: 16px;
+}
+
+main.strengths p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/* 4ᵉ colonne : footer */
+footer {
+  background-color: #292a2d;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px;
+}
+
+.footer-nav,
+.social-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.footer-nav a,
+.social-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-nav img {
+  width: 24px;
+  height: 24px;
+}
