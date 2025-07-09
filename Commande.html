@@ -1,78 +1,96 @@
 
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="fonts/Barlow-Regular.ttf">
-    <link rel="stylesheet" href="css/style.css3">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Probeats – Récapitulatif</title>
+  <link rel="stylesheet" href="css/styles Commande.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="assets/images/logo.png" alt="Logo">
-            </div>
-            <div>
-                <button>Achat</button>
-                <button>Contact/Assistance</button>
-                <button>Inscription/Connexion</button>
-            </div>
-        </nav>
+
+  <!-- 1ère colonne : header -->
+  <header>
+    <img src="assets/images/probeats-logo.png" alt="Logo Probeats" class="logo">
+    <nav class="btn-group">
+      <a href="Commande.html" class="btn">Achat</a>
+      <a href="assistance.html"  class="btn">Contact / Assistance</a>
+      <a href="#" class="btn">Inscription / Connexion</a>
+    </nav>
   </header>
-  <main>
-    <!--Récapitulatif de la commande-->
-    <div>
-        <h1>Récapitulatif de la commande</h1>
-        <p>Produit :
-        Référence du produit :
-        Quantité :
-        Couleur :
-        Commande effectuée le :</p>
-        <button>Valider la commande</button>
-    </div>
-    <!--Informations de livraison-->
-    
-        <h2>Informations de livraison</h2>
-        <p>Nom :
-            Prénom:
-            Adresse de livraison :
-            Tél. :
-            Mode de livraison :  Standard
-                                 En point relais
-                                A domicile
-        </p>
-            <button>Valider le mode de livraison</button>
-            <!--Informations de paiement-->
-        
-             <div>
-                <h3>Informations de paiement</h3>
-                <p>Par carte bleu
-                Par PayPal
-                Par carte cadeau</p>
-                <button>Valider le mode de paiement</button>
-            </div>
+
+  <section class="separator"></section>
+
+  <!-- 2ᵉ colonne : récapitulatif de la commande -->
+  <main class="summary">
+    <h2>Récapitulatif de la commande</h2>
+    <address>
+      <p>Produit : Casque Probeats X1000</p>
+      <p>Référence du produit : PBX1000</p>
+      <p>Quantité : 1</p>
+      <p>Couleur : Noir mat</p>
+      <p>Commande effectuée le : 09/07/2025</p>
+      <p>Adresse mail : <address>client@exemple.com</address></p>
+    </address>
+    <a href="commande.html" class="btn-validate">Valider la commande</a>
   </main>
+
+  <section class="separator"></section>
+
+  <!-- 3ᵉ colonne : informations de livraison -->
+  <main class="delivery">
+    <h2>Informations de livraison</h2>
+    <address>
+      <p>Nom : Dupont</p>
+      <p>Prénom : Marie</p>
+      <p>Adresse de livraison : 12 Rue des Fleurs, 21000 Dijon</p>
+      <p>Téléphone : 06 12 34 56 78</p>
+    </address>
+    <label for="mode-livraison">Mode livraison :</label>
+    <select id="mode-livraison">
+      <option>Standard</option>
+      <option>À domicile</option>
+      <option>En point relais</option>
+      <option>Retrait en magasin</option>
+    </select>
+    <a href="#" class="btn-validate">Valider le mode livraison</a>
+  </main>
+
+  <section class="separator"></section>
+
+  <!-- 4ᵉ colonne : informations de paiement -->
+  <main class="payment">
+    <h2>Informations de paiement</h2>
+    <address>
+      <p>Nom : Dupont</p>
+      <p>Prénom : Marie</p>
+      <p>Adresse de facturation : 12 Rue des Fleurs, 21000 Dijon</p>
+    </address>
+    <label for="mode-paiement">Mode paiement :</label>
+    <select id="mode-paiement">
+      <option>Par carte bleue</option>
+      <option>Par PayPal</option>
+      <option>Par carte cadeau</option>
+    </select>
+    <a href="#" class="btn-validate">Valider le mode paiement</a>
+  </main>
+
+  <section class="separator"></section>
+
+  <!-- 5ᵉ colonne : footer -->
   <footer>
-    <div>
-      <p>@Copyright 2025</p>  
-    </div>
-    <div>
-        <p>Plan du site</p>
-    </div>
-    <div>
-        <p>Mentions Légales</p>
-    </div>
-    <!--Réseaux Sociaux-->
-    <div>
-        <a href="https://twitter.com"><img src="assets/images/twitter.png" alt="Twitter"></a>
-         <a href="https://instagram.com"><img src="assets/images/instagram.png" alt="Instagram"></a>
-          <a href="https://facebook.com"><img src="assets/images/facebook.png" alt="Facebook"></a>
-    </div>
+    <p>© 2025 Probeats</p>
+    <nav class="footer-nav">
+      <p>Plan du site</p>
+      <p>Mentions Légales</p>
+    </nav>
+    <nav class="social">
+      <a href="https://twitter.com" target="_blank"><img src="assets/images/twitter.png"   alt="Twitter"></a>
+      <a href="https://instagram.com" target="_blank"><img src="assets/images/instagram.png" alt="Instagram"></a>
+      <a href="https://facebook.com" target="_blank"><img src="assets/images/facebook.png"  alt="Facebook"></a>
+    </nav>
   </footer>
-    
-  </body>
-  </html>
+
+</body>
+</html>
