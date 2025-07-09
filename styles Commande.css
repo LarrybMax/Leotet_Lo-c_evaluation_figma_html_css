@@ -1,0 +1,217 @@
+
+/* Import police Barlow Regular & Bold */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  max-width: 1900px;
+  margin: 0 auto;
+  color: #292a2d;
+}
+
+/* Séparateur */
+.separator {
+  width: 100%;
+  height: 20px;
+}
+
+/* 1ère colonne : header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+header .logo {
+  height: 50px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 24px;
+  background-color: #292a2d;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* 2ᵉ colonne : summary */
+main.summary {
+  background-color: #7edce1;
+  position: relative;
+  padding: 24px;
+}
+
+main.summary h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #292a2d;
+  margin-bottom: 24px;
+}
+
+main.summary address {
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+main.summary address p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #292a2d;
+  margin-bottom: 12px;
+}
+
+main.summary address address {
+  font-style: normal;
+  margin-left: 1em;
+}
+
+.btn-validate {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: inline-block;
+  padding: 24px;
+  background-color: #292a2d;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* 3ᵉ colonne : delivery */
+main.delivery {
+  background-color: #41b4bb;
+  position: relative;
+  padding: 24px;
+}
+
+main.delivery h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #292a2d;
+}
+
+main.delivery address {
+  text-align: left;
+  margin: 24px auto;
+  max-width: 60%;
+}
+
+main.delivery address p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #292a2d;
+  margin-bottom: 12px;
+}
+
+main.delivery label {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #292a2d;
+  margin-top: 24px;
+}
+
+main.delivery select {
+  font-size: 24px;
+  padding: 8px;
+  margin-top: 12px;
+  width: 50%;
+}
+
+main.delivery .btn-validate {
+  bottom: 24px;
+  right: 24px;
+}
+
+/* 4ᵉ colonne : payment */
+main.payment {
+  background-color: #b6a299;
+  position: relative;
+  padding: 24px;
+}
+
+main.payment h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #292a2d;
+}
+
+main.payment address {
+  text-align: left;
+  margin: 24px auto;
+  max-width: 60%;
+}
+
+main.payment address p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #292a2d;
+  margin-bottom: 12px;
+}
+
+main.payment label {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #292a2d;
+  margin-top: 24px;
+}
+
+main.payment select {
+  font-size: 24px;
+  padding: 8px;
+  margin-top: 12px;
+  width: 50%;
+}
+
+main.payment .btn-validate {
+  bottom: 24px;
+  right: 24px;
+}
+
+/* 5ᵉ colonne : footer */
+footer {
+  background-color: #292a2d;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px;
+}
+
+.footer-nav,
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.footer-nav a,
+.social a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social img {
+  width: 24px;
+  height: 24px;
+}
