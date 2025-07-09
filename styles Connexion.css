@@ -1,0 +1,114 @@
+
+/* Import police Barlow Regular */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  color: #292a2d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+  padding: 24px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+header .logo {
+  max-height: 60px;
+}
+
+/* Container des formulaires */
+.auth-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 24px;
+  gap: 24px;
+}
+
+/* Boîte de formulaire */
+.form-box {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #292a2d;
+}
+
+/* Champs et labels */
+.form-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Se souvenir */
+.remember {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.remember input {
+  margin-right: 8px;
+}
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 24px;
+  background-color: #292a2d;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .auth-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-box {
+    max-width: 100%;
+  }
+}
